@@ -1,0 +1,9 @@
+<p>reactive-form works!</p>
+
+<form [formGroup]="form">
+<input formControlName="name" placeholder="Name" />
+<input formControlName="email" placeholder="Email" />
+</form>
+<button (click)="submitForm()">Submit</button>
+<p>Name: {{ userSignal().name }}</p>
+<p>Email: {{ userSignal().email }}</p>

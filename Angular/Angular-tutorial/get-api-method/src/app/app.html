@@ -1,0 +1,8 @@
+<ul>
+  @for (user of users1(); track user.id) 
+  {
+    <li>{{ user.name }} -- {{ user.email }}</li>
+  }
+</ul>
+
+<pre>{{ users | json }}</pre> <pre>{{ users | json }}</pre> ```

@@ -1,0 +1,18 @@
+<h3> User from Json server</h3>
+
+
+<input type="text" placeholder="Enter name" [value]="name()" (input)="name.set($event.target.value)">
+<input type="text" placeholder="Enter email" [value]="email()" (input)="email.set($event.target.value)">
+<button (click)="submitForm()"> {{edittingUpdateID() !== null ? 'Update' : 'Add'}} User</button>
+
+<h3> User List </h3>
+<ul>
+  @for (item of users(); track item.id) {
+    <li> {{item.name}} _ {{item.email}} 
+      <strong> {{item.isActive ? 'Active' : 'Inactive'}} </strong>
+    </li>
+    <button (click)="editUser(item)"  class="btn btn-primary"> Edit </button>
+    <button (click)="toggletStatus(item)" class="btn btn-secondary"> Toggle Status </button>
+    <button (click)="deleteUser(item.id)" class="btn btn-danger"  type="button"> Delete </button>
+  }
+</ul>

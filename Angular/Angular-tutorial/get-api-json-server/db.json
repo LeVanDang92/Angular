@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "isActive": true
+    },
+    {
+      "id": "2",
+      "name": "Jane Smith",
+      "email": "jane.smith@example.com"
+    },
+    {
+      "id": "3",
+      "name": "Alice Johnson",
+      "email": "alice.johnson@example.com"
+    },
+    {
+      "id": "4",
+      "name": "Bob Brown",
+      "email": "bob.brown@example.com"
+    },
+    {
+      "name": "le van dang",
+      "email": "danglevan.9919@gmail.com",
+      "isActive": false,
+      "id": "OvJx4Q-_Lk4"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

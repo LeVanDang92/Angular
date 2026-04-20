@@ -1,0 +1,31 @@
+{
+    "reviews": [
+        {
+            "id": 1,
+            "name": "John Doe",
+            "rating": 4,
+            "comment": "Great product! Highly recommend.",
+            "image": "https://via.placeholder.com/150",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "jobTitle": "Software Engineer"
+        },
+        {
+            "id": 2,
+            "name": "Jane Smith",
+            "rating": 5,
+            "comment": "Excellent quality and fast shipping.",
+            "image": "https://via.placeholder.com/150",
+            "text": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "jobTitle": "Product Manager"
+        },
+        {
+            "id": 3,
+            "name": "Bob Johnson",
+            "rating": 3,
+            "comment": "Good value for the price, but could be better.",
+            "image": "https://via.placeholder.com/150",
+            "text": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+            "jobTitle": "Graphic Designer"
+        }
+    ]
+}

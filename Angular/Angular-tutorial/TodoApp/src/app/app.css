@@ -1,0 +1,16 @@
+button{
+    padding: 6px 12px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+li{
+    margin-top: 8px;
+    list-style: none;
+    font-size: 18px;
+}
+
+input {
+    padding: 6px 12px;
+    font-size: 16px;
+}

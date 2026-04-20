@@ -1,0 +1,22 @@
+<div class="container">
+  <h1 class="title">Customer Reviews</h1>
+
+  @if(loading()){
+    <p>Loading reviews...</p>
+  }
+  @else {
+    @if(currentReview()){
+      <div class="card">
+         <img [src]="currentReview()?.image" [alt]="currentReview()?.name" class="profile-image" />
+          <h2>{{ currentReview()?.jobTitle }}</h2>
+          <p>{{ currentReview()?.text }}</p>
+          <p>{{ currentReview()?.name }}</p>
+
+          <div class="buttons">
+            <button (click)="previousReview()">Previous</button>
+            <button (click)="nextReview()">Next</button>
+          </div>
+      </div>
+  }
+}
+</div>

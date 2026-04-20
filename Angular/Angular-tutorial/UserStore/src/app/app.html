@@ -1,0 +1,26 @@
+<h2> Counter App</h2>
+
+<p>Current count: {{ counterStore.count() }}</p>
+
+<button (click)="counterStore.increment()">Increment</button>
+<button (click)="counterStore.decrement()">Decrement</button>
+<button (click)="counterStore.reset()">Reset</button> 
+
+<H2>User store</H2>
+
+@if(userStore.user()){
+  <p>Name: {{ userStore.user()?.name }}</p>
+  <p>email: {{ userStore.user()?.email }}</p>
+  <p>role : {{ userStore.user()?.role }}</p>
+
+  @if(userStore.user()?.role === 'admin'){
+
+     <p>Admin access granted</p> 
+     <button (click)="userStore.logout()">Logout</button>
+  }
+
+}@else
+  {
+    <p>Access denied. Admins only.</p>
+    <button (click)="userStore.login('levandang','danglevan.9919@gmail.com', 'admin')">Login</button>
+  }

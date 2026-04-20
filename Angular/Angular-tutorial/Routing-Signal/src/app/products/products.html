@@ -1,0 +1,11 @@
+<p>products works!</p>
+
+<h3>Products</h3>
+
+<input placeholder="Search" [value] = "search()" (input) = "search.set($event.target.value); updateUrl();">
+
+<ul>
+    @for (item of filteredProducts();track $index) {
+        <li>{{item}}</li>
+    }   
+</ul>

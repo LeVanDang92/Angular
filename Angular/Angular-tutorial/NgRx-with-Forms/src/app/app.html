@@ -1,0 +1,12 @@
+<h2>NgRx with Forms</h2>
+
+@if( form$ | async ; as form){
+  <input type ="text" placeholder="Enter Name" [value]="form.name" (input)="updateField('name',$event.target.value)">
+  <br>
+  <input type="email" placeholder="Enter Email" [value] = "form.email" (input)="updateField('email',$event.target.value)">
+  <br>
+<button (click)="resetForm()">Reset Form</button>
+  <h4>Form Preview</h4>
+  <pre>{{ form | json}}</pre>
+
+}

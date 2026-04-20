@@ -1,0 +1,31 @@
+<h2>Template driven form signal </h2>
+
+<input [ngModel]="name()" (ngModelChange)="name.set($event)" placeholder="Name" />
+<input [ngModel]="email()" (ngModelChange)="email.set($event)" placeholder="Email" />
+<button (click)="submit()">Submit</button>
+
+<p>Name: {{ name() }}</p>
+<p>Email: {{ email() }}</p>
+
+<hr>
+<h2>Reactive Form</h2>
+<app-reactive-form></app-reactive-form>
+
+<p>>Card component</p>
+<app-card title="Card Title" description="This is a description of the card.">
+
+  <p>This is from the card parent</p>
+  <button>Click me</button>
+
+</app-card>
+
+<br>
+
+<app-button label="Save" (clicked)="onSave($event)"></app-button>
+
+<p>{{message}}</p>
+
+<br>
+
+<app-form-field label="Name" type="email" (valueChange)="onEmailChange($event)"></app-form-field>
+<p>Current email: {{_email}}</p>
